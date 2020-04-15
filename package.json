@@ -1,0 +1,24 @@
+{
+  "name": "rahma.io",
+  "version": "1.0.0",
+  "description": "Personnal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/4math2379/rahma.io.git"
+  },
+  "keywords": [
+    "personal",
+    "website",
+    "folio"
+  ],
+  "author": "Rahma john Sinien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4math2379/rahma.io/issues"
+  },
+  "homepage": "https://github.com/4math2379/rahma.io#readme"
+}
