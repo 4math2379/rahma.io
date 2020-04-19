@@ -41,6 +41,10 @@ if (e.which == 13) {
     showStars();
     input.val('');
 
+  }else if (inputVal == "palantir") {
+    showPalantir();
+    input.val('');
+
   } else if (inputVal == 'whats that sound' || inputVal == 'what\'s that sound' || inputVal == 'whats that sound?') {
     seperator();
     Output('<span class="blue">' + inputVal + '</span></br><span class="red">Machine Broken!</span></br>');
@@ -51,21 +55,14 @@ if (e.which == 13) {
   } else if (inputVal== "project") {
     project(); 
 
-  } else if (inputVal == "bot") {
-   Output(' <span class="blue">Try my Bot in your Slack Team !</span> <a style="text-align:center;" href="https://slack.com/oauth/authorize?&client_id=162822869152.211928533794&scope=bot,incoming-webhook"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /> </a> '
-
- );
-
-    
-  
-} else {
+  } else {
     Output('<span>command not found</span></br>');
     input.val('');
   }
 }
 });
 
-//bulder la console
+//builder la console
 function seperator() {
 Output('<span class="seperator">== == == == == == == == == == == == == == == == == ==</span></br>');
 }
@@ -76,9 +73,9 @@ output.html("");
 Output('<span>clear</span></br>');
 }
 
-// prints out a list of "all" comands available
+// prints out a list of "all" commands available
 function help() {
-var commandsArray = ['Help: List of available commands', '>help', '>about', '>contact', '>project', '>Stars','>ping', '>time', '>clear', '>say'];
+var commandsArray = ['Help: List of available commands', '>help', '>about', '>contact', '>project', '>Stars','>palantir','>ping', '>time', '>clear', '>say'];
 for (var i = 0; i < commandsArray.length; i++) {
   var out = '<span>' + commandsArray[i] + '</span><br/>';
   Output(out);
@@ -118,6 +115,13 @@ Output('<span>It\'s the 21st century man! Get an Apple Watch</span></br>');
 //show the stars of the day
 function showStars() {
   window.location.href = "stars.html";
+
+
+}
+
+//play the palantir
+function showPalantir() {
+  window.location.href = "palantir.html";
 
 
 }
