@@ -103,7 +103,7 @@ if (data.startsWith("say") === true) {
 } else if (data.startsWith("apt-get") === true) {
   data = "<span class='green'>Updating...</span> You are Not Meryl ... my Baby heart <3";
 } else {
-  data = "The force is week within you, my master you not be!";
+  data = "The force is weak within you, my master you not be!";
 }
 Output('<span>' + data + '</span></br>');
 }
@@ -131,7 +131,7 @@ function showPalantir() {
 
 
 function aboutMe() {
-var aboutMeArray = ['>About:', 'Hi There!', 'I\'m Rahma, a Blockchain developer  ', 'Feel free to follow me on twitter @vesuviian and stay tuned for updates ! '];
+var aboutMeArray = ['>About:', 'Hi There!', 'I\'m Rahma, a DevOps Engineer   ', 'Feel free to follow me on twitter @vesuviian and stay tuned for updates ! '];
 seperator();
 for (var i = 0; i < aboutMeArray.length; i++) {
   var out = '<span>' + aboutMeArray[i] + '</span><br/>';
